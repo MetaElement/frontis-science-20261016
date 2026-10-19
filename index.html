@@ -12,10 +12,10 @@
   <meta property="og:image" content="https://metaelement.github.io/frontis-science-20261016/assets/og.png" />
   <link rel="icon" type="image/png" href="/frontis-science-20261016/assets/favicon.png" />
   <link rel="preload" href="/frontis-science-20261016/assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" as="image" href="/frontis-science-20261016/assets/scientific-frontier.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/frontis-science-20261016/assets/hero/ai.webp" fetchpriority="high" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"衔远科技 Frontis","url":"https://frontis.cn","foundingDate":"2021","email":"xianyuan@frontis.ai","sameAs":["https://github.com/FrontisAI"]}</script>
-  <script type="module" crossorigin src="/frontis-science-20261016/assets/index-DU_FFaTp.js"></script>
-  <link rel="stylesheet" crossorigin href="/frontis-science-20261016/assets/index-DsbF-CHa.css">
+  <script type="module" crossorigin src="/frontis-science-20261016/assets/index-CnTgqq3V.js"></script>
+  <link rel="stylesheet" crossorigin href="/frontis-science-20261016/assets/index-D5VO2r0r.css">
 <link rel="canonical" href="https://metaelement.github.io/frontis-science-20261016/" /></head>
 <body class="science-edition">
   <a class="skip-link" href="#main" data-i18n="skip">跳至主要内容</a>
@@ -28,18 +28,31 @@
   </header>
   <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" hidden><a href="#products" data-i18n="navProducts">技术平台</a><a href="#industries" data-i18n="navIndustries">产业实践</a><a href="#research" data-i18n="navResearch">开放研究</a><a href="#about" data-i18n="navAbout">关于衔远</a><button data-contact="talent" data-i18n="joinUs">加入衔远</button></nav>
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title" data-formation="0">
-      <img class="hero-landscape" src="/frontis-science-20261016/assets/scientific-frontier.webp" width="1672" height="941" alt="" aria-hidden="true" fetchpriority="high" />
-      <div class="hero-film" aria-hidden="true"></div>
-      <div class="hero-topline"><span>FRONTIS / AI FOR AI</span><span data-i18n="heroEdition">专业智能，持续进化。</span></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">自动化生产专业 AI 的基础设施</span></div>
-        <h1 id="hero-title"><span data-i18n="heroLine1">让 AI，</span><br><span data-i18n="heroLine2">创造</span><span class="accent" data-i18n="heroLine3">专业 AI。</span></h1>
-        <p class="hero-description" data-i18n="heroDescription">让 AI 训练模型、构建 Agent、积累专业经验。<br>把你的行业知识，变成持续进化的智能。</p>
-        <div class="hero-cta"><a class="button button-dark" href="#products"><span data-i18n="discoverProducts">探索专业 AI</span><span class="arrow">↗</span></a><button class="text-button" data-contact="business"><span data-i18n="bookDemo">预约产品演示</span><span class="arrow">↗</span></button></div>
+    <section id="hero" class="hero hero-sequence" role="region" aria-roledescription="轮播" aria-label="专业智能的四个视角" data-scene="0" data-hero-renderer="loading">
+      <div id="hero-stage" class="hero-stage" aria-hidden="true">
+        <img id="hero-poster" class="hero-poster" src="/frontis-science-20261016/assets/hero/ai.webp" width="1024" height="1024" alt="" fetchpriority="high" />
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <span id="hero-visual-hint" class="hero-visual-hint">移动指针，探索结构</span>
       </div>
-      <a class="hero-research-card" href="#research"><span class="research-card-label"><span class="status-dot"></span>OPEN RESEARCH</span><div><span>Frontis-MA1</span><strong>35B</strong></div><p data-i18n="heroResearch">面向 AI 自我改进的开放权重研究模型</p><span class="hero-card-arrow" aria-hidden="true">↗</span></a>
-      <div class="hero-bottom"><a class="scroll-hint" href="#vision"><span class="scroll-line"></span><span>SCROLL TO DISCOVER</span><span>↓</span></a><span class="hero-index" data-i18n="heroVisualNote">科学计算概念视觉 / SCIENTIFIC INTELLIGENCE</span></div>
+      <div class="hero-film" aria-hidden="true"></div>
+      <div class="hero-topline"><span>FRONTIS / INTELLIGENCE, IN PRACTICE</span><span class="hero-visual-note">INTERACTIVE CONCEPT STUDIES</span></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span id="hero-eyebrow">AI FOR AI / 专业智能的基础设施</span></div>
+        <h1 id="hero-title"><span id="hero-line1">让 AI，</span><span id="hero-line2" class="accent">创造专业 AI。</span></h1>
+        <p id="hero-summary" class="hero-description">以 MetaAgent 连接专业评测、模型实验与 Agent 迭代，将行业知识转化为专业 AI。</p>
+        <div class="hero-copy-actions"><a id="hero-action" class="button button-dark" href="#products"><span id="hero-action-label">探索技术平台</span><span class="arrow" aria-hidden="true">↗</span></a><button id="hero-demo" class="text-button" data-contact="business"><span>预约产品演示</span><span class="arrow" aria-hidden="true">↗</span></button></div>
+        <div id="hero-proof" class="hero-proof">MetaAgent / Agent 评测与进化 / AI4ML</div>
+      </div>
+      <div class="hero-sequence-bottom">
+        <div id="hero-navigation" class="hero-navigation" role="group" aria-label="选择首页场景">
+          <button type="button" data-hero-slide="0" aria-pressed="true"><i>01</i><span>AI for AI</span></button>
+          <button type="button" data-hero-slide="1" aria-pressed="false"><i>02</i><span>合成生物</span></button>
+          <button type="button" data-hero-slide="2" aria-pressed="false"><i>03</i><span>集成电路</span></button>
+          <button type="button" data-hero-slide="3" aria-pressed="false"><i>04</i><span>持续进化</span></button>
+        </div>
+        <div class="hero-transport"><span id="hero-count">01 / 04</span><div id="hero-progress" aria-hidden="true"><i></i></div><button type="button" id="hero-prev" aria-label="上一个场景"><span aria-hidden="true">←</span></button><button type="button" id="hero-next" aria-label="下一个场景"><span aria-hidden="true">→</span></button><button type="button" id="hero-autoplay" aria-label="暂停自动轮播"><span aria-hidden="true">Ⅱ</span></button></div>
+      </div>
+      <p id="hero-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
     </section>
     <div class="audience-rail section-wrap"><div class="hero-audiences"><a href="#products"><i>01 / BUSINESS</i><span data-i18n="businessLink">为企业，构建专业智能</span><span>↗</span></a><a href="#partnership"><i>02 / PARTNERS</i><span data-i18n="strategicLink">与伙伴，共创下一步</span><span>↗</span></a><a href="#careers"><i>03 / CAREERS</i><span data-i18n="talentLink">和人才，探索新边界</span><span>↗</span></a></div></div>
 
